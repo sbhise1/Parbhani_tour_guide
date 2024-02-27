@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    font-weight: 500;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 9px;
+    
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px solid skyblue;
+    margin-top: 55px;
+    width: 77rem;
+    background-color: aquamarine;
+}
+.container div{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 16px;
+}
+.hospital img{
+    height: 10rem;
+}
+.filters{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 15rem;
+    justify-content: center;
+    padding-left: 10px;
+    height: fit-content;
+    border-radius: 8px;
+    background-color: cyan;
+}
+.filters input{
+    margin-left: 15px;
+}
+.filters div{
+    display: flex;
+    
+}
+.filters input{
+    display: inline;
+}
+.hospital{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    margin: 15px;
+    border-radius: 11px;
+    background-color: #bcb7d7;
+}
+.hospital div{
+    margin: 5px;
+
+}
+.filters span{
+    padding-left: 5px;
+}
+.fl{
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-between;
+}
+
+.hosinfo{
+    height: 10rem;
+}
+.hosinfo p{
+    font-size: 25px;
+    font-weight: 700;
+}
+.show {
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5bb91c7;
+    cursor: pointer;
+    height: 54px;
+    border-radius: 8px;
+    font-size: xx-large;
+    font-family: system-ui;
+    color: green;
+}
+
+.taluqas {
+    display: flex;
+    margin: 15px;
+    justify-content: center;
+}
+
+.taluqas span {
+    margin-left: 15px;
+    cursor: pointer;
+}
+.visi{
+    display: none;
+}
+.taluqas span a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-family: monospace;
+}
+.taluqas span a:hover{
+    color: rgb(144, 144, 211);
+    background-color: rgb(16, 20, 22);
+    font-weight: bolder;
+}
+@media only screen and (max-width: 576px) {
+    /* Add your styles for smaller phones here */
+    .filters {
+        display: none;
+    }
+    .hospital{
+        display: flex;
+        flex-direction: column;
+    }
+    .hospital img{
+        height: 10rem;
+    }
+
+    .show {
+        border: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f5bb91c7;
+        cursor: pointer;
+        height: 54px;
+        border-radius: 8px;
+        font-size: xx-large;
+        font-family: system-ui;
+        color: green;
+    }
+    
+    .taluqas {
+        display: flex;
+        margin: 15px;
+        justify-content: center;
+    }
+    
+    .taluqas span {
+        margin-left: 15px;
+        cursor: pointer;
+    }
+    .visi {
+        display: none;
+    }    
+}
